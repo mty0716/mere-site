@@ -1,3 +1,5 @@
+'use client'
+
 import Link from 'next/link'
 import Carousel from '../components/Carousel'
 import { getFeaturedNews, getFeaturedAchievements, scrollingResearchNews } from '../data/newsData'

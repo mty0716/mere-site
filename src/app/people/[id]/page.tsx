@@ -1,13 +1,13 @@
+'use client'
+
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { teamMembers } from '../../../data/teamData'
+import { useParams } from 'next/navigation'
 
-interface TeamMemberDetailPageProps {
-  params: Promise<{ id: string }>
-}
-
-export default async function TeamMemberDetailPage({ params }: TeamMemberDetailPageProps) {
-  const { id } = await params
+export default function TeamMemberDetailPage() {
+  const params = useParams()
+  const id = params.id as string
   const memberId = parseInt(id)
   const member = teamMembers.find(item => item.id === memberId)
 

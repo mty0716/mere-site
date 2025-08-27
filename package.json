@@ -5,10 +5,15 @@
   "description": "矿山生态安全教育部工程研究中心官方网站",
   "author": "矿山生态安全教育部工程研究中心",
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
+    "dev": "next dev",
+    "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "next lint",
+    "type-check": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
   },
   "dependencies": {
     "react": "19.1.0",

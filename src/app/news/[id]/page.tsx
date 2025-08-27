@@ -1,13 +1,13 @@
+'use client'
+
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { newsData } from '../../../data/newsData'
+import { useParams } from 'next/navigation'
 
-interface NewsDetailPageProps {
-  params: Promise<{ id: string }>
-}
-
-export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
-  const { id } = await params
+export default function NewsDetailPage() {
+  const params = useParams()
+  const id = params.id as string
   const newsId = parseInt(id)
   const news = newsData.find(item => item.id === newsId)
 
