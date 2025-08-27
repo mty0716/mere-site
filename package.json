@@ -1,7 +1,9 @@
 {
-  "name": "next",
-  "version": "0.1.0",
+  "name": "mine-ecology-center",
+  "version": "1.0.0",
   "private": true,
+  "description": "矿山生态安全教育部工程研究中心官方网站",
+  "author": "矿山生态安全教育部工程研究中心",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
